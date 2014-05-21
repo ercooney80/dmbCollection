@@ -1,0 +1,96 @@
+#BACKUP DATA
+#CDS.TXT
+#
+DMB | 2007 Summer Tour Sampler | 1 | USA | Opened | 2007 | n/a | Bonus Disc | 8 tracks (Yellow) Warehouse Edition
+DMB | 2007 Summer Tour Sampler | 1 | USA | Opened | 2007 | n/a | Bonus Disc | 4 tracks (Blue) Warehouse Edition
+DMB | 2012 Summer Tour Sampler | 1 | USA | Sealed | 2012 | n/a | Bonus Disc | 5 tracks (orange) Musictoday Edition
+DMB | 2012 Summer Tour Sampler | 1 | USA | Sealed | 2012 | n/a | Bonus Disc | 8 tracks (blue) Warehouse Edition
+DMB | A Limited Edition Companion to Stand Up | 1 | USA | Opened | 2005 | n/a | Bonus Disc | 5 tracks (Red) MusicToday Edition
+DMB | A Limited Edition Companion to Stand Up | 1 | USA | Opened | 2005 | n/a | Bonus Disc | 8 tracks (Blue) Warehouse Edition
+DMB | Away From The World | 1 | USA | Sealed | 2012 | 88725435273 | Studio | 	
+DMB | Away From The World | 2 | EU | Sealed | 2013 | 5050954298720 | Studio | Record Store Day Release
+DMB | Away From The World | 2 | EU | Opened | 2013 | 5050954298720 | Studio | Record Store Day Release
+DMB | Away From The World | 2 | USA | Sealed | 2012 | 88725452721 | Studio | Deluxe Edition
+DMB | Away From The World | 2 | Canada | Sealed | 2012 | 88725452721 | Studio | Deluxe Edition
+DMB | Before These Crowded Streets | 1 | USA | Sealed | 1998 | 078636766027 | Studio | 	
+DMB | Before These Crowded Streets | 1 | USA | Opened | 1998 | 078636766027 | Studio | 	
+DMB | Before These Crowded Streets | 1 | Australia | Opened | 1998 | 078636776027 | Studio | 
+DMB | Before These Crowded Streets | 1 | Japan | Sealed | 1998 | BVCP6127 | Studio | 
+DMB | Big Apple Bonus Disc | 1 | USA | Opened | 2010 | n/a | Bonus Disc | MusicToday Edition 4 tracks
+DMB | Big Apple Bonus Disc | 1 | USA | Opened | 2010 | n/a | Bonus Disc | Warehouse Edition 8 tracks
+DMB | Big Whiskey and the Groogrux King	 | 2 | USA | Opened | 2009 | 886975092727 | Studio | Deluxe Edition
+DMB | Big Whiskey and the Groogrux King	 | 2 | USA | Sealed | 2009 | 886975092727 | Studio | Deluxe Edition
+DMB | Big Whiskey and the Groogrux King	 | 1 | EU | Sealed | 2009 | 5051865487425 | Studio | 
+DMB | Big Whiskey and the Groogrux King	 | 1 | USA | Opened | 2009 | 886974871224 | Studio | 
+DMB | Big Whiskey and the Groogrux King	 | 1 | USA | Sealed | 2009 | 886974871224 | Studio | 
+DMB | Big Whiskey and the Groogrux King	 | 1 | S America | Opened | 2009 | 5051865487425 | Studio | IFPI Seal on front
+DMB | Big Whiskey and the Groogrux King	 | 1 | S America | Opened | 2009 | 5051865487425 | Studio | IFPI Seal on front
+DMB | Big Whiskey and the Groogrux King	 | 1 | Taiwan | Sealed | 2009 | 5051865487425 | Studio | OBI
+DMB | Big Whiskey and the Groogrux King	 | 3 | USA | Opened | 2009 | 886975092925 | Studio | Super Deluxe Edition
+DMB | Big Whiskey and the Groogrux King	 | 3 | USA | Sealed | 2009 | 886975092925 | Studio | Super Deluxe Edition
+DMB | Busted Stuff | 2 | USA | Opened | 2002 | 078636811727 | Studio | 	
+DMB | Busted Stuff | 2 | USA | Sealed | 2002 | 078636811727 | Studio | 	
+DMB | Busted Stuff | 2 | USA | Sealed | 2002 | 078636811727 | Studio | 	
+Code Magenta | Code Magenta | 1 | USA | Opened | 1995 | 786975955124 | Studio | 	
+DMB | Crash | 1 | USA | Opened | 1996 | D112604 | Studio | BMG Direct Marketing Version
+DMB | Crash | 1 | Japan | Opened | 1996 | 07863669042 | Studio | BVCP940
+DMB | Crash | 1 | Japan | Opened | 1996 | 07863669042 | Studio | BVCP940
+DMB | Crash | 1 | USA | Opened | 1996 | 078636690421 | Studio | 
+DMB | Crash | 1 | USA | Sealed | 1996 | 078636690421 | Studio | 
+DMB | Crash | 1 | S America | Sealed | 1996 | 078636690421 | Studio | 
+DMB | Encore Trax: JPJ Extended | 1 | USA | Sealed | 2013 | n/a | Bonus Disc | Live Trax 28 Bonus
+DMB | Encore Trax: JPJ Extended | 1 | USA | Sealed | 2013 | n/a | Bonus Disc | Live Trax 28 Bonus
+DMB | Everyday | 1 | EU | Opened | 2001 | 078636798820 | Studio | 
+DMB | Everyday | 1 | S America | Sealed | 2001 | 078636798820 | Studio | 
+DMB | Everyday | 1 | Japan | Sealed | 2001 | BVCP21140 | Studio	 | 
+DMB | Everyday | 1 | Canada | Sealed | 2001 | 078636798820 | Studio | 	
+DMB | Everyday | 2 | Australia | Opened | 2001 | 0743219076526 | Studio | Special Edition Release
+DMB | Everyday | 2 | Australia | Sealed | 2001 | 0743219076526 | Studio | Special Edition Release
+DMB | Greetings From Bader Field | 1 | USA | Sealed | 2011 | n/a | Bonus Disc | Warehouse Edition 8 track
+DMB | Greetings From Bader Field | 1 | USA | Sealed | 2011 | n/a | Bonus Disc | Musictoday Edition 5 track
+Tribe Of Heaven | Imagine We Were | 1 | USA | Sealed | 2005 | 783707043500 | Studio | 	
+TR3 | Light Up Ahead | 1 | USA | Opened | 1995 | TR3001 | Studio | Independent Release
+DMB | Live At… Central Park Concert Bonus Disc | 1 | USA | Opened  | 2003 | n/a | Bonus Disc | Warehouse bonus disc
+DMB | Recently | 1 | USA | Opened | 1993 | BAMA002 | Studio | NO UPC Pumpkin Cover
+DMB | Recently | 1 | USA | Opened | 1993 | 783177730443 | Studio | BAMA003
+DMB | Recently | 1 | USA | Opened | 1997 | 078636754826 | Studio | 	
+DMB | Remember Two Things | 1 | USA | Opened | 1993 | BAMA001 | Studio | NO UPC
+DMB | Remember Two Things | 1 | USA | Opened | 1994 | 783177720222 | Studio | BAMA001 With UPC
+DMB | Remember Two Things | 1 | USA | Opened | 1997 | 078636754727 | Studio | 	
+DM | Some Devil | 1 | Argentina | Sealed | 2003 | 828765627627 | Studio | 
+DM | Some Devil | 1 | EU | Opened | 2003 | 828765627627 | Studio | 	
+DM | Some Devil | 1 | Canada | Sealed | 2003 | 828765619820 | Studio | 	
+DM | Some Devil | 1 | Japan | Sealed | 2003 | BVCP21346 | Studio | 4988017618776
+DM | Some Devil | 1 | Japan | Sealed | 2003 | BVCP21346 | Studio | 4988017618776
+DM | Some Devil | 1 | USA | Sealed | 2003 | 828765516720 | Studio | 	
+DM | Some Devil | 2 | USA | Opened | 2003 | 828765619721 | Studio | Live At… Bonus Disc
+DMB | Stand Up | 1 | USA | Opened | 2005 | 828766879629 | Studio | Digipac
+DMB | Stand Up | 1 | USA | Sealed | 2005 | 828766879629 | Studio | Digipac
+DMB | Stand Up | 1 | Australia | Opened | 2005 | 828767621623 | Studio | DualDisc, DD Jewel Case
+DMB | Stand Up | 1 | USA | Opened | 2005 | 828766928822 | Studio | Hole Punch, DD Jewel Case
+DMB | Stand Up | 1 | USA | Sealed | 2005 | 828766928822 | Studio | Regular Jewel Case
+DMB | Stand Up | 2 | EU | Opened | 2005 | VVR1034488 | Studio | V2 1CD/1DVD
+DMB | Stand Up | 1 | EU | Opened | 2005 | VVR1034482 | Studio | V2 5033197344829
+DMB | The Best Of What’s Around Vol 1 | 2 | USA | Opened | 2006 | 828768885826 | Studio | 
+DMB | The Best Of What’s Around Vol 1 | 1 | USA | Sealed | 2006 | 886973652121 | Studio | EcoFriendly Package
+DMB | The Best Of What’s Around Vol 1 | 2 | Korea | Sealed | 2006 | 28768885826 | Studio | 
+Tim Reynolds | The Limbic System | 1 | USA | Sealed | 2010 | 884501372831 | Studio | 
+Boyd Tinsley | True Reflections | 1 | USA | Sealed | 2003 | 828765263320 | Studio | 	
+DMB | Under The Table And Dreaming | 1 | USA | Sealed | 1994 | 07863664492 | Studio | BMG Edition
+DMB | Under The Table And Dreaming | 1 | USA | Opened | 1994 | 07863664492 | Studio | BMG Edition Cloud Disc
+DMB | Under The Table And Dreaming | 1 | USA | Sealed | 1994 | D105998 | Studio | BMG Music Club Edition
+DMB | Under The Table And Dreaming | 1 | Canada | Opened | 1994 | 07863664492 | Studio | 	
+DMB | Under The Table And Dreaming | 1 | USA | Opened | 1994 | 07863664492 | Studio | Columbia House Edition
+DMB | Under The Table And Dreaming | 1 | Japan | Opened | 1994 | BVCP768 | Studio | 	
+DMB | Europe 2009 | 4 | USA | Opened | 2009 | 886976182427 | Live | 
+DMB | Listener Supported | 2 | USA | Sealed | 1999 | 078636789828 | Live | Hole Punch
+Dmb | Live At Folsom Field | 2 | USA | Sealed | 2002 | 078636812427 | Live | 
+DMB | Live At Folsom Field | 2 | USA | Sealed | 2002 | 078636812427 | Live | 
+DMB | Live At Mile High Music Festival | 3 | USA | Opened | 2008 | 886974297024 | Live | 
+DMB | Live At Mile High Music Festival | 3 | USA | Sealed | 2008 | 886974297024 | Live | 
+DMB | LIVE AT PIEDMONT PARK | 3 | USA | SEALED | 2007 | 886972144429 | LIVE |
+DMB | LIVE AT PIEDMONT PARK | 3 | USA | OPENED | 2007 | 886972144429 | LIVE |
+DMB | LIVE AT RED ROCKS 8.15.95 | 2 | USA | SEALED | 1997 | 078636758725 | LIVE |
+DMB | LIVE AT WRIGLEY FIELD | 2 | USA | SEALED | 2011 | 886978625427 | LIVE |
+DMB | LIVE AT WRIGLEY FIELD | 2 | TAIWAN | SEALED | 2011 | 886978625427 | LIVE |
+DMB | LIVE AT WRIGLEY FIELD BOX SET | 4 | USA | SEALED | 2011 | N/A | LIVE | WH EDITION, SCREEN PRINT #2062 TEST

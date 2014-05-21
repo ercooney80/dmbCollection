@@ -1,0 +1,31 @@
+#BACKUP DATA
+#CASSETTES.TXT
+#
+DMB | Busted Stuff | 1 | USA | Sealed | 2002 | 07863681174125 | Studio |
+DMB | Crash | 1 | Thailand | Opened | 1996 | 078636690445 | Studio |
+DMB | Crash | 1 | Philippines | Opened | 1996 | 078636690445 | Studio |
+DMB | Crash | 1 | USA | Sealed | 1996 | 078636690445 | Studio |
+DMB | Crash | 1 | USA | Sealed | 1996 | 078636690445 | Studio | With Grammy Sticker
+DMB | Crash | 1 | USA | Opened | 1996 | 078636690445 | Studio |
+DMB | Crash | 1 | USA | Sealed | 1996 | C112604 | Studio | BMG Direct Marketing Version
+DM | Some Devil | 1 | Bulgaria | Sealed | 2003 | MK148113 | Studio |
+DMB | Before These Crowded Streets | 1 | USA | Sealed | 1998 | 078636766041 | Studio |
+DMB | Before These Crowded Streets | 1 | Phillipines | Open | 1998 | 078636766041 | Studio |
+DMB | Before These Crowded Streets | 1 | Indonesia  | Open | 1998 | 078636766041 | Studio |
+DMB | Everyday | 1 | Poland | Opened | 2001 | 078636798844 | Studio |
+DMB | Everyday | 1 | USA | Sealed | 2001 | 078636798844 | Studio |
+DMB | Everyday | 1 | Philippines | Opened | 2001 | 078636798844 | Studio |
+DMB | Everyday | 1 | Thailand | Sealed | 2001 | 078636798844 | Studio |
+DMB | Everyday | 1 | Turkey | Opened | 2001 | 078636798844 | Studio | TAPE ONLY	
+DMB | Remember Two Things | 1 | USA | Sealed | 1993 | bama001 | Studio | NO UPC
+DMB | Remember Two Things | 1 | USA | Opened | 1993 | bama001 | Studio | 83177720444
+DMB | Remember Two Things | 1 | USA | Sealed | 1993 | 78636754741 | Studio |
+DMB | Under The Table And Dreaming | 1 | USA | Sealed | 1994 | 07863664494 | Studio | C105998 BMG Direct 
+DMB | Under The Table And Dreaming | 1 | Philippines | Opened | 1994 | 07863664494 | Studio |
+DMB | Under The Table And Dreaming | 1 | Poland | Opened | 1994 | 07863664494 | Studio |
+DMB | Under The Table And Dreaming | 1 | Turkey | Sealed | 1994 | 078636644943 | Studio |
+D+T | Live At Luther College | 2 | Bulgaria | Opened | 1999 | 078636775524 | Studio |
+D+T | Live At Luther College | 2 | Bulgaria | Sealed | 1999 | 078636775524 | Studio |
+DMB | Everyday Sampler | 1 | EU | opened | 2001 | DMB3/02 | Promo Single | 4 tracks
+DMB | EVERYDAY SAMPLER | 1 | AUSTRALIA | OPENED | 2001 | PROMC21174 | PROMO SINGLE | 4 TRACKS
+DDD | DDD | 1 | DDDD | SEALED | 2014 | DDDD | BONUS DISC | DDD

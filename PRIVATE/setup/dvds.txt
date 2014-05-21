@@ -1,0 +1,9 @@
+# one per line
+# empty or beginning with "#" indicates to ignore the line
+# initial test data START - 5/15/2014
+
+D+T | Live at Radio City | 2 | USA | Opened | 2007 | 886971310191 | Studio
+Dmb | Brixton 2009: Live In Europe | ? | UK | Sealed | 2011	| 5034504982772 | Studio
+Dmb | Listener Supported | 1 | USA | Opened | 2000 | 078636500492 | Studio
+
+# initial test data END - 5/15/2014

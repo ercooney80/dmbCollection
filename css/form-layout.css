@@ -1,0 +1,18 @@
+.formtable table, .formtable  tr, .formtable  th, .formtable  td {
+        background-color: #dbc9a0;
+} 
+
+textarea {
+    resize: none;
+    width: 25em;
+}
+
+input {
+    width: 25em;
+}
+
+.formtable th {
+    padding-top: 3px;
+    text-align: right;
+    vertical-align: text-top;
+}

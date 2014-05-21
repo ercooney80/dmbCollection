@@ -1,0 +1,7 @@
+# one per line
+# empty or beginning with "#" indicates to ignore the line
+# initial test data START - 5/15/2014
+
+ercdmb | ercooney80@gmail.com | siaGohth | 1
+
+# initial test data END - 5/15/2014

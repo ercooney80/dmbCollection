@@ -1,0 +1,4 @@
+<Files cds.txt>
+ # order allow,deny
+ allow from all
+</Files>

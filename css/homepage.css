@@ -1,0 +1,66 @@
+  
+#rside {
+    border: solid 1px #036e1e;
+    margin: 30px 10px 4px 4px;
+    width: 200px;
+    float: right;        
+}
+
+#lside {
+    border: none;
+    margin: 30px 4px 4px 20px;
+    width: 600px;
+    float: left;        
+}
+
+
+#rside h3, #rside h4, #rside h5, #rside input, #rside textarea, #rside button {
+    padding: 0em;
+    margin-left: 1em;
+}
+
+#rside h3, #rside h5, #rside input, #rside textarea, #lside h3 {
+    width: 170px;
+    resize: none;
+    margin-bottom: 0em;
+}
+
+#rside h3 {
+    margin-top: 1em;
+}
+
+#rside h4 {
+    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;    
+}
+
+#rside button {
+    margin-bottom: 1em;
+    margin-top: 4px;
+}
+
+#lside h3 {
+    margin-top: 0;
+}
+
+#frontpagetable {
+    margin: auto auto auto auto;
+    font-size: 9pt;
+    text-indent: 1px;
+    border-collapse: collapse;
+    border-radius: 2px 2px 2px 2px;
+    width: 100%;   
+}
+
+#frontpagetable th {
+    text-align: left;
+}
+
+
+#frontpagetable  th, #frontpagetable td {
+    border: 1px solid #036e1e;
+}
+
+

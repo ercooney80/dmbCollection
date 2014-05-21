@@ -1,0 +1,32 @@
+# one per line
+# empty or beginning with "#" indicates to ignore the line
+# initial test data START - 5/15/2014
+
+DMB | Before These Crowded Streets | 2 | USA | Opened | 1998 | Studio | 12" | 078636766010 |
+DMB | Away From The World | 2 | USA | Sealed | 2012 | Studio | 12" | 887254352716 | Clear Vinyl
+DMB | Big Whiskey and the Groogrux King | 2 | USA | Opened | 2009 | Studio | 12" | 886974871217 |
+DMB | Big Whiskey and the Groogrux King | 2 | USA | Sealed | 2009 | Studio | 12" | 886974871217 |
+DMB | Big Whiskey and the Groogrux King | 2 | USA | Sealed | 2009 | Studio | 12" | 886974871217 |
+DMB | Live Trax Vol 1 | 4 | USA | Sealed | 2012 | Live | 12" | 817947014126 | RSD Exclusive #0446
+DMB | Live Trax Vol 1 | 4 | USA | Sealed | 2012 | Live | 12" | n/a | WH Limited Edition
+DMB | Live Trax Vol 2 | 4 | USA | Sealed | 2012 | Live | 12" | 817947014188 | RSD Exclusive #0722
+DMB | Live Trax Vol 2 | 4 | USA | Sealed | 2012 | Live | 12" | 817947014188 | WH Limited Edition	
+DMB | Live Trax Vol 3 | 4 | USA | Sealed | 2012 | Live | 12" | 817947014201 | RSD Exclusive #0676	
+DMB | Live Trax Vol 3 | 4 | USA | Sealed | 2012 | Live | 12" | 817947014201 | WH Limited Edition	
+DMB | Live Trax Vol 4 | 4 | USA | Sealed | 2012 | Live | 12" | 817947014232 | RSD Exclusive #1256
+DMB | Mercy/Gaucho | 1 | USA | opened | 2012 | Single US | 7" | n/a | 
+DMB | Mercy/Gaucho | 1 | USA | opened | 2012 | Single US | 7" | n/a | 
+DMB | Mercy/Gaucho | 1 | USA | opened | 2012 | Single US | 7" | n/a | 
+D+T | Squirm/Lying In the Hands Of God | 1 | USA | opened | 2009 | Promo Single | 7" | 88697662367 | Record Store Day 2009 Promo
+D+T | Squirm/Lying In the Hands Of God | 1 | USA | opened | 2009 | Promo Single | 7" | 88697662367 | Record Store Day 2009 Promo
+D+T | Squirm/Lying In the Hands Of God | 1 | USA | opened | 2009 | Promo Single | 7" | 88697662367 | Record Store Day 2009 Promo
+D+T | Squirm/Lying In the Hands Of God | 1 | USA | opened | 2009 | Promo Single | 7" | 88697662367 | Record Store Day 2009 Promo
+D+T | Squirm/Lying In the Hands Of God | 1 | USA | opened | 2009 | Promo Single | 7" | 88697662367 | Record Store Day 2009 Promo
+D+T | Squirm/Lying In the Hands Of God | 1 | USA | opened | 2009 | Promo Single | 7" | 88697662367 | Record Store Day 2009 Promo
+D+T | Squirm/Lying In the Hands Of God | 1 | USA | opened | 2009 | Promo Single | 7" | 88697662367 | Record Store Day 2009 Promo
+D+T | Squirm/Lying In the Hands Of God | 1 | USA | opened | 2009 | Promo Single | 7" | 88697662367 | Record Store Day 2009 Promo
+D+T | Squirm/Lying In the Hands Of God | 1 | USA | opened | 2009 | Promo Single | 7" | 88697662367 | Record Store Day 2009 Promo
+D+T | Squirm/Lying In the Hands Of God | 1 | USA | opened | 2009 | Promo Single | 7" | 88697662367 | Record Store Day 2009 Promo
+
+
+DMB | Too Much/Jimi Thing | 1 | USA | opened | 2014 | Bonus Disc | 7" | 74321394837 | 
