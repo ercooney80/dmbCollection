@@ -21,7 +21,7 @@ foreach ($cassettes as $str) {
     continue;
   list($artist, $title, $tapes, $country, $cond, $prod_year, $upc, $category, $description) = array_map('trim', explode("|", $info));
   echo "$artist | $title | $tapes | $country | $cond | $prod_year | $upc | $category | $time | $description\n";
-  
+
   $cassette = R::dispense('cassette');
   $cassette->artist = $artist;
   $cassette->title = $title;

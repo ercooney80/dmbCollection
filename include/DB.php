@@ -2,6 +2,7 @@
 
 /**
  * @author Edward Cooney <ercooney80@gmail.com>
+ * @author Dr Robert Kline
  * File: include/DB.php
  * Date: 05/15/2014
  * PHP version: 5.3
@@ -61,8 +62,7 @@ class DB {
     );
   }
 
-  
-    /**
+  /**
    * Gets the epoch timestamp held in the appropriate table and converts to 
    * user friendly format
    * @param type $id table id
@@ -81,13 +81,12 @@ class DB {
     }
     return date($fmt, $item->created_at);
   }
-  
+
   public static function getCategories() {
-    return array('BONUS DISC', 'DIGITAL', 'LIVE', 'PROMO ALBUM', 'PROMO SINGLE', 
+    return array('BONUS DISC', 'DIGITAL', 'LIVE', 'PROMO ALBUM', 'PROMO SINGLE',
         'PROMO COMPILATION', 'RADIO COMPILATION', 'SINGLE IMPORT', 'SINGLE US', 'STUDIO');
   }
-  
-  
+
   public static function getYears() {
     $start = '1990'; // first possible year of material;
     $current = date('Y');
@@ -95,4 +94,5 @@ class DB {
     arsort($years);
     return $years;
   }
+
 }

@@ -14,7 +14,4 @@ $session = new Session();
 <?php if (isset($session->user)): ?>
   <div class="welcome">Welcome, <?php echo $session->user->name ?></div>
   <?php
-
-
-
  endif; 

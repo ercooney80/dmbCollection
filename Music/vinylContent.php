@@ -7,7 +7,6 @@
  * Description: build the content for the vinyl display page
  * ToDo:
  */
-
 require_once "include/Session.php";
 $session = new Session();
 require_once "include/DB.php";
@@ -39,15 +38,15 @@ foreach ($vinyls as $vinyl) {
 ?>
 
 <table> 
-  <th style="width: 8%"><a href="vinyl.php?orderField=artist">Artist</a></th>
-  <th style="width: 20%"><a href="vinyl.php?orderField=title">Title</a></th>
-  <th style="width: 6%"><a href="vinyl.php?orderField=records">Records</a></th>
-  <th style="width: 9%"><a href="vinyl.php?orderField=country">Country</a></th>
-  <th style="width: 7%"><a href="vinyl.php?orderField=cond">Condition</a></th>                    
-  <th style="width: 4%"><a href="vinyl.php?orderField=prod_year">Year</a></th>
-  <th style="width: 9%"><a href="vinyl.php?orderField=upc">UPC/CAT#</a></th>                             
-  <th style="width: 7%"><a href="vinyl.php?orderField=category">Category</a></th>
-  <th style="width: 10%"><a href="vinyl.php?orderField=vinyl_size">Vinyl Size</a></th>
+  <th style="width: 8%"><a href="displayTable.php?table=vinyl&type=Music&orderField=artist">Artist</a></th>
+  <th style="width: 20%"><a href="displayTable.php?table=vinyl&type=Music&orderField=title">Title</a></th>
+  <th style="width: 6%"><a href="displayTable.php?table=vinyl&type=Music&orderField=records">Records</a></th>
+  <th style="width: 9%"><a href="displayTable.php?table=vinyl&type=Music&orderField=country">Country</a></th>
+  <th style="width: 7%"><a href="displayTable.php?table=vinyl&type=Music&orderField=cond">Condition</a></th>                    
+  <th style="width: 4%"><a href="displayTable.php?table=vinyl&type=Music&orderField=prod_year">Year</a></th>
+  <th style="width: 9%"><a href="displayTable.php?table=vinyl&type=Music&orderField=upc">UPC/CAT#</a></th>                             
+  <th style="width: 7%"><a href="displayTable.php?table=vinyl&type=Music&orderField=category">Category</a></th>
+  <th style="width: 10%"><a href="displayTable.php?table=vinyl&type=Music&orderField=vinyl_size">Vinyl Size</a></th>
   <th style="width: 19%">Description</th>
   <?php foreach ($list as $vinyl): ?>
     <tr>

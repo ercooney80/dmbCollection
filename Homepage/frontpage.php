@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @author Edward Cooney <ercooney80@gmail.com>
  * File: Homepage/frontpage.php
@@ -39,7 +38,7 @@ try {
   }
   array_multisort($created_at, SORT_DESC, $all_items);
 
-  
+
   // Build the recent additions array
   for ($i = 0; $i < $listSize; $i++) {
     $element = $all_items[$i];
@@ -53,7 +52,6 @@ try {
         'upc' => $item->upc,
     );
   }
-  
 } catch (Exception $ex) {
   $warning = $ex->getMessage();
 }
@@ -61,27 +59,27 @@ try {
 //echo var_dump($new_items);
 ?>
 
-  <h3>Site News</h3>
-  <p><?php echo $news ?></p>
+<h3>Site News</h3>
+<p><?php echo $news ?></p>
 
 <h3>New Additions</h3>
 <table id="frontpagetable">
-    <th>Artist</th>
+  <th>Artist</th>
   <th>Title</th>
   <th>Country</th>
   <th>Category</th>
   <th>Format</th>
   <th>UPC</th>
-<?php foreach ($new_items as $new_item): ?>
-  <tr>
-    <td><?php echo $new_item['artist']; ?></td>
-    <td><?php echo $new_item['title']; ?></td>
-    <td><?php echo $new_item['country']; ?></td>
-    <td><?php echo $new_item['category']; ?></td>
-    <td><?php echo $new_item['format']; ?></td>
-    <td><?php echo $new_item['upc']; ?></td>
-  </tr>
-<?php endforeach; ?>
+  <?php foreach ($new_items as $new_item): ?>
+    <tr>
+      <td><?php echo $new_item['artist']; ?></td>
+      <td><?php echo $new_item['title']; ?></td>
+      <td><?php echo $new_item['country']; ?></td>
+      <td><?php echo $new_item['category']; ?></td>
+      <td><?php echo $new_item['format']; ?></td>
+      <td><?php echo $new_item['upc']; ?></td>
+    </tr>
+  <?php endforeach; ?>
 </table>
 
 

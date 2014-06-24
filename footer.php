@@ -9,6 +9,6 @@ if (!($current == $creation)) {
 }
 
 $date = $date . ' Edward R Cooney';
- echo $date;
- ?>
+echo $date;
+?>
 

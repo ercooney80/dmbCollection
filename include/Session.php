@@ -1,7 +1,9 @@
+
 <?php
 
 /**
  * @author Edward Cooney <ercooney80@gmail.com>
+ * @author Dr Robert Kline
  * File: include/Session.php
  * Date: 05/15/2014
  * PHP version: 5.3

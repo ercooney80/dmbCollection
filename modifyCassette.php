@@ -50,25 +50,24 @@ if (isset($params->modify)) {
     if (empty($params->upc)) {
       $upc = 'n/a';
     } else {
-      $upc = str_replace(' ', '', trim($params->upc)) ;
+      $upc = str_replace(' ', '', trim($params->upc));
       $upc = str_replace('-', '', $upc);
     }
     $upc = strtoupper($upc);
     $category = $params->category;
     $description = strtoupper(trim($params->description));
     //$image = trim($params->image);
-    
     // Validate
     if (empty($artist)) {
       throw new Exception("ARTIST IS EMPTY");
     }
     if (empty($title)) {
       throw new Exception("TITLE IS EMPTY");
-    } 
+    }
     if (empty($country)) {
       throw new Exception("COUNTRY IS EMPTY");
-    } 
-    
+    }
+
     // Create the cassette
     $cassette->artist = $artist;
     $cassette->title = $title;
@@ -86,12 +85,12 @@ if (isset($params->modify)) {
     // Here we replace the old entry with the new entry
     $file = 'setup/cassettes.txt';  // file name
     $contents = file($file);  // contents of file to array
-    $contents = array_map('strtoupper',$contents);
+    $contents = array_map('strtoupper', $contents);
     $new_entry = "$artist | $title | $tapes | $country | $condition | "
             . "$year | $upc | $category | $description";
     $new_entry = trim($new_entry);
     $old_entry = trim($old_entry);
-    $contents = array_map('strtoupper',$contents);
+    $contents = array_map('strtoupper', $contents);
     $count = 1; // Only replace 1 occurance
     $contents = str_replace($old_entry, $new_entry, $contents, $count);
     file_put_contents($file, $contents, LOCK_EX);
@@ -125,9 +124,9 @@ if (isset($params->modify)) {
     <title>Admin - Modify Cassette</title>
     <link rel="stylesheet" type="text/css" href="css/superfish.css" />
     <link rel="stylesheet" type="text/css" href="css/layout.css" />
-     <link rel="stylesheet" type="text/css" href="css/form-layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/form-layout.css" />
     <style type="text/css">
-      
+
     </style>  
   </head>
   <body >
@@ -135,118 +134,118 @@ if (isset($params->modify)) {
     <header class="header"><?php require_once "include/header.php" ?></header>
     <section class="navigation"><?php require_once "include/navigation.php" ?></section>
     <section class="content"><!-- content -->   
-        <h2>Modify Cassette</h2>
-        <h3 class="message" ><?php echo htmlspecialchars($message) ?></h3>
-        <form name="add" action="" method="post">
-          <table class="formtable">
-            <tr>
-              <th>artist:</th>
-                <td><input type="text" name="artist"
-                  value="<?php echo htmlspecialchars($params->artist) ?>" />
-                </td>
-            </tr>
-            <tr>
-              <th>title:</th>
-                <td><input type="text" name="title"
-                  value="<?php echo htmlspecialchars($params->title) ?>" />
-                </td>
-            </tr>
-            <tr>
-              <th>tapes:</th>
-              <td>
-                <select required name="tapes">
-                 <?php for ($i = 1; $i < ($num_tapes + 1); $i++): ?>
+      <h2>Modify Cassette</h2>
+      <h3 class="message" ><?php echo htmlspecialchars($message) ?></h3>
+      <form name="add" action="" method="post">
+        <table class="formtable">
+          <tr>
+            <th>artist:</th>
+            <td><input type="text" name="artist"
+                       value="<?php echo htmlspecialchars($params->artist) ?>" />
+            </td>
+          </tr>
+          <tr>
+            <th>title:</th>
+            <td><input type="text" name="title"
+                       value="<?php echo htmlspecialchars($params->title) ?>" />
+            </td>
+          </tr>
+          <tr>
+            <th>tapes:</th>
+            <td>
+              <select required name="tapes">
+                <?php for ($i = 1; $i < ($num_tapes + 1); $i++): ?>
                   <option 
-                    <?php if ($i == $params->tapes): ?>
-                       selected ="<?php echo $i; ?>"
+                  <?php if ($i == $params->tapes): ?>
+                      selected ="<?php echo $i; ?>"
                     <?php endif; ?>
                     value="<?php echo "$i" ?>"><?php echo $i; ?></option>          
-                    <?php endfor; ?>
-                </select>    
-              </td>
-            </tr>
-            <tr>
-              <th>country:</th>
-                <td><input type="text" name="country"
-                  value="<?php echo htmlspecialchars($params->country) ?>" />
-                </td>
-            </tr>
-            <tr>
-              <th>condition:</th> 
-              <td>
-                <input style="width: 3em" 
-                         <?php if ($params->condition == "SEALED"): ?>
-                            checked
-                         <?php endif; ?>
-                         type="radio" name="condition" value="SEALED">Sealed
-                <input style="width: 3em" 
-                         <?php if ($params->condition == "OPENED"): ?>
-                            checked
-                         <?php endif; ?>
-                         type="radio" name="condition" value="OPENED">Opened
-              </td>            
-            </tr>
-            <tr>
-              <th>year:</th>
-              <td>
-                <select required name="year">
-                  <?php foreach ($years as $year): ?>
+                  <?php endfor; ?>
+              </select>    
+            </td>
+          </tr>
+          <tr>
+            <th>country:</th>
+            <td><input type="text" name="country"
+                       value="<?php echo htmlspecialchars($params->country) ?>" />
+            </td>
+          </tr>
+          <tr>
+            <th>condition:</th> 
+            <td>
+              <input style="width: 3em" 
+              <?php if ($params->condition == "SEALED"): ?>
+                       checked
+                     <?php endif; ?>
+                     type="radio" name="condition" value="SEALED">Sealed
+              <input style="width: 3em" 
+              <?php if ($params->condition == "OPENED"): ?>
+                       checked
+                     <?php endif; ?>
+                     type="radio" name="condition" value="OPENED">Opened
+            </td>            
+          </tr>
+          <tr>
+            <th>year:</th>
+            <td>
+              <select required name="year">
+                <?php foreach ($years as $year): ?>
                   <option 
-                    <?php if ($year == $params->year): ?>
-                       selected ="<?php echo $year; ?>"
+                  <?php if ($year == $params->year): ?>
+                      selected ="<?php echo $year; ?>"
                     <?php endif; ?>                   
                     value="<?php echo "$year" ?>"><?php echo htmlspecialchars($year); ?></option>
-              
-                    <?php endforeach; ?>
-                </select>              
+
+                <?php endforeach; ?>
+              </select>              
             </td>
-            </tr>
-            <tr>
-              <th>upc/cat#:</th>
-                <td><input type="text" name="upc"
-                  value="<?php echo htmlspecialchars($params->upc) ?>" />
-                </td>
-            </tr>
-            <tr>
-              <th>category:</th>
-              <td>
-                <select required name="category">
-                  <?php foreach ($categories as $category): ?>
-                    <option 
-                    <?php if ($category == $params->category): ?>
-                       selected ="<?php echo $category; ?>"
+          </tr>
+          <tr>
+            <th>upc/cat#:</th>
+            <td><input type="text" name="upc"
+                       value="<?php echo htmlspecialchars($params->upc) ?>" />
+            </td>
+          </tr>
+          <tr>
+            <th>category:</th>
+            <td>
+              <select required name="category">
+                <?php foreach ($categories as $category): ?>
+                  <option 
+                  <?php if ($category == $params->category): ?>
+                      selected ="<?php echo $category; ?>"
                     <?php endif; ?>
-                      ><?php echo htmlspecialchars($category); ?></option>
-                    <?php endforeach; ?>
-                </select>
-              </td>  
-            </tr>
-            <tr>
-              <th>description:</th>
-              <td>
-                <textarea  rows="15" cols="50"  type="text" name="description"><?php
-                  echo htmlspecialchars($params->description)
-                  ?></textarea>    
-              </td>
-            </tr>
-            <tr>
-              <th>image:</th>
-              <td><input type="text" name="image" 
-                         value="<?php echo htmlspecialchars($params->image) ?>" />
-              </td>
-            </tr>
-           </table>
-            <table class="changer">
-            <tr>
-              <td></td>
-              <td><button class="button" type="submit" name="modify">Modify Item</button></td>
-              <td><button class="button" type="reset" name="reset">Reset</button></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </table>
-        </form>
-      </section><!-- content -->
+                    ><?php echo htmlspecialchars($category); ?></option>
+                  <?php endforeach; ?>
+              </select>
+            </td>  
+          </tr>
+          <tr>
+            <th>description:</th>
+            <td>
+              <textarea  rows="15" cols="50"  type="text" name="description"><?php
+                echo htmlspecialchars($params->description)
+                ?></textarea>    
+            </td>
+          </tr>
+          <tr>
+            <th>image:</th>
+            <td><input type="text" name="image" 
+                       value="<?php echo htmlspecialchars($params->image) ?>" />
+            </td>
+          </tr>
+        </table>
+        <table class="changer">
+          <tr>
+            <td></td>
+            <td><button class="button" type="submit" name="modify">Modify Item</button></td>
+            <td><button class="button" type="reset" name="reset">Reset</button></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </form>
+    </section><!-- content -->
 
   </section><!-- container -->
 
@@ -256,10 +255,10 @@ if (isset($params->modify)) {
   <script type="text/javascript" src="js/init.js"></script>
   <script type="text/javascript">
     $(function() {
-        $("button[name='modify']").click(function() {
-          return confirm("Are you sure?");
-        });
+      $("button[name='modify']").click(function() {
+        return confirm("Are you sure?");
       });
+    });
   </script>
   <footer id="footer"><?php require_once 'footer.php'; ?></footer>
 </body>

@@ -21,15 +21,15 @@ if (isset($session->user)) {
 <li><a href=".">Home</a></li> 
 <li><a href="#">Music</a>
   <ul>
-    <li><a href="cds.php">CDs</a></li>
-    <li><a href="cassettes.php">Cassettes</a></li>
-    <li><a href="vinyl.php">Vinyl</a></li>
+    <li><a href="displayTable.php?table=cds&type=Music">CDs</a></li>
+    <li><a href="displayTable.php?table=cassettes&type=Music">Cassettes</a></li>
+    <li><a href="displayTable.php?table=vinyl&type=Music">Vinyl</a></li>
   </ul>
 </li>
 <li><a href="#">Video</a>
   <ul>
-    <li><a href="dvd.php">DVDs</a></li>
-    <li><a href="vhs.php">VHS</a></li>
+    <li><a href="displayTable?type=dvd.php">DVDs</a></li>
+    <li><a href="displayTable?type=vhs.php">VHS</a></li>
   </ul>
 </li>
 <?php if ($superUser): ?>  

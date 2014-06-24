@@ -32,7 +32,7 @@ unset($session->username);
     <link rel="stylesheet" type="text/css" href="css/layout.css" />
     <link rel="stylesheet" type="text/css" href="css/form-layout.css" />
     <style type="text/css">
-  
+
     </style>  
   </head>
   <body >
@@ -41,28 +41,28 @@ unset($session->username);
     <section class="navigation"><?php require_once "include/navigation.php" ?></section>
     <section class="content"><!-- content -->
 
-        <h2>Login</h2>
+      <h2>Login</h2>
 
-        <p>Please enter access information</p>
-        <form action="pwValidation.php" method="post" autocomplete="off">
-          <table class="formtable">
-            <tr>
-              <th>user:</th>
-              <td><input type="text" name="username" autofocus="on"
-                         value="<?php echo htmlspecialchars($username) ?>" /></td>
-            </tr>
-            <tr>
-              <th>password:</th>
-              <td><input type="password" name="password" /></td>
-            </tr>
-            <tr>
-              <td><button type="submit">Access</button></td>
-            </tr>
-          </table>
-        </form>
-        <h3 id="response"><?php echo $message ?></h3>
+      <p>Please enter access information</p>
+      <form action="pwValidation.php" method="post" autocomplete="off">
+        <table class="formtable">
+          <tr>
+            <th>user:</th>
+            <td><input type="text" name="username" autofocus="on"
+                       value="<?php echo htmlspecialchars($username) ?>" /></td>
+          </tr>
+          <tr>
+            <th>password:</th>
+            <td><input type="password" name="password" /></td>
+          </tr>
+          <tr>
+            <td><button type="submit">Access</button></td>
+          </tr>
+        </table>
+      </form>
+      <h3 id="response"><?php echo $message ?></h3>
 
-      </section><!-- content -->
+    </section><!-- content -->
 
   </section><!-- container -->
 

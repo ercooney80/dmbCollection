@@ -1,14 +1,21 @@
 <?php
 /**
  * @author Edward Cooney <ercooney80@gmail.com>
- * File: vinyl.php
+ * File: desplayTable.php
  * Date: 05/15/2014
  * PHP version: 5.3
- * Description: table display template
+ * Description: table display for a collection item
  * ToDo:
  */
 require_once 'include/Session.php';
 $session = new Session();
+
+$params = (object) $_REQUEST;
+
+$type = $params->type;
+$table = $params->table;
+$title = strtoupper($params->table);
+$filename = $type . "/" . $table . "Content.php";
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
   "http://www.w3.org/TR/html4/loose.dtd">
@@ -17,12 +24,12 @@ $session = new Session();
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>Vinyl</title>
+    <title><?php echo $title ?></title>
 
     <link rel="stylesheet" type="text/css" href="css/superfish.css" />
     <link rel="stylesheet" type="text/css" href="css/layout.css" />
     <link rel="stylesheet" type="text/css" href="css/display-layout.css" />
-    <style type="text/css">
+    <style type="text/css">     
 <?php if ($session->user->level > 0): ?>
         .container {
           width: 1040px;
@@ -31,19 +38,17 @@ $session = new Session();
         .container {
           width: 1020px;
         }
-<?php endif; ?>     
+<?php endif; ?>
     </style>  
   </head>
   <body >
   <section class="container">
     <header class="header"><?php require_once "include/header.php" ?></header>
     <section class="navigation"><?php require_once "include/navigation.php" ?></section>
-    <section class="content"><!-- content -->
+    <section class="content"><!-- content -->      
+      <section><?php require_once $filename; ?></section>
 
-      <section><?php  require_once 'Music/vinylContent.php'; ?></section>
-      
-    </section><!-- content -->
-
+    </section><!-- content -->  
   </section><!-- container -->
 
   <script type="text/javascript" src="js/textlength.js"></script>

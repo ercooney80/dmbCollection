@@ -22,7 +22,6 @@ if ($session->user == null || $session->user->level == 0) {
 $years = DB::getYears();              // prod_year select
 $categories = DB::getCategories();    // category select
 $num_discs = 20;                      // discs select
-
 // Add the item on click of add button  
 if (isset($params->add)) {
   try {
@@ -40,24 +39,23 @@ if (isset($params->add)) {
     if (empty($params->upc)) {
       $upc = 'n/a';
     } else {
-      $upc = str_replace(' ', '', trim($params->upc)) ;
+      $upc = str_replace(' ', '', trim($params->upc));
       $upc = str_replace('-', '', $upc);
     }
     $upc = strtoupper($upc);
     $category = $params->category;
     $description = strtoupper(trim($params->description));
     //$image = trim($params->image);
-    
     // Validate
     if (empty($artist)) {
       throw new Exception("ARTIST IS EMPTY");
     }
     if (empty($title)) {
       throw new Exception("TITLE IS EMPTY");
-    } 
+    }
     if (empty($country)) {
       throw new Exception("COUNTRY IS EMPTY");
-    } 
+    }
 
     // Create the cd
     $cd = R::dispense('cd');
@@ -92,7 +90,6 @@ if (isset($params->add)) {
   $params->upc = "";
   $params->description = "";
   $params->image = "";
-  
 }
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
@@ -105,9 +102,9 @@ if (isset($params->add)) {
     <title>Admin - Add CD</title>
     <link rel="stylesheet" type="text/css" href="css/superfish.css" />
     <link rel="stylesheet" type="text/css" href="css/layout.css" />
-     <link rel="stylesheet" type="text/css" href="css/form-layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/form-layout.css" />
     <style type="text/css">
-      
+
     </style>  
   </head>
   <body>
@@ -115,105 +112,105 @@ if (isset($params->add)) {
     <header class="header"><?php require_once "include/header.php" ?></header>
     <section class="navigation"><?php require_once "include/navigation.php" ?></section>
     <section class="content"><!-- content -->
-      
-        <h2>Add CD</h2>
-        <h3 class="message" ><?php echo htmlspecialchars($message) ?></h3>
-        <form name="add" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
-          <table class="formtable">
-            <tr>
-              <th>artist:</th>
-                <td><input type="text" name="artist"
-                  value="<?php echo htmlspecialchars($params->artist) ?>" />
-                </td>
-            </tr>
-            <tr>
-              <th>title:</th>
-                <td><input type="text" name="title"
-                  value="<?php echo htmlspecialchars($params->title) ?>" />
-                </td>
-            </tr>
-            <tr>
-              <th>discs:</th>
-              <td>
-                <select required name="discs">
-                 <?php for ($i = 1; $i < ($num_discs + 1); $i++): ?>
+
+      <h2>Add CD</h2>
+      <h3 class="message" ><?php echo htmlspecialchars($message) ?></h3>
+      <form name="add" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
+        <table class="formtable">
+          <tr>
+            <th>artist:</th>
+            <td><input type="text" name="artist"
+                       value="<?php echo htmlspecialchars($params->artist) ?>" />
+            </td>
+          </tr>
+          <tr>
+            <th>title:</th>
+            <td><input type="text" name="title"
+                       value="<?php echo htmlspecialchars($params->title) ?>" />
+            </td>
+          </tr>
+          <tr>
+            <th>discs:</th>
+            <td>
+              <select required name="discs">
+                <?php for ($i = 1; $i < ($num_discs + 1); $i++): ?>
                   <option value="<?php echo "$i" ?>"><?php echo $i; ?></option>           
-                    <?php endfor; ?>
-                </select>    
-              </td>
-            </tr>
-            <tr>
-              <th>country:</th>
-                <td><input type="text" name="country"
-                  value="<?php echo htmlspecialchars($params->country) ?>" />
-                </td>
-            </tr>
-            <tr>
-              <th>condition:</th> 
-              <td><input style="width: 5em" type="radio" name="condition" value="SEALED">SEALED
-                <input style="width: 5em" type="radio" name="condition" value="OPENED">OPENED</td>            
-            </tr>
-            <tr>
-              <th>year:</th>
-              <td>
-                <select required name="year">
-                  <?php foreach ($years as $year): ?>
+                <?php endfor; ?>
+              </select>    
+            </td>
+          </tr>
+          <tr>
+            <th>country:</th>
+            <td><input type="text" name="country"
+                       value="<?php echo htmlspecialchars($params->country) ?>" />
+            </td>
+          </tr>
+          <tr>
+            <th>condition:</th> 
+            <td><input style="width: 5em" type="radio" name="condition" value="SEALED">SEALED
+              <input style="width: 5em" type="radio" name="condition" value="OPENED">OPENED</td>            
+          </tr>
+          <tr>
+            <th>year:</th>
+            <td>
+              <select required name="year">
+                <?php foreach ($years as $year): ?>
                   <option value="<?php echo "$year" ?>"><?php echo htmlspecialchars($year); ?></option>
                   <option
-                    <?php endforeach; ?>
-                </select>              
-            </td>
-            </tr>
-            <tr>
-              <th>upc/cat#:</th>
-                <td><input type="text" name="upc"
-                  value="<?php echo htmlspecialchars($params->upc) ?>" />
-                </td>
-            </tr>
-            <tr>
-              <th>category:</th>
-              <td>
-                <select required name="category">
-                  <?php foreach ($categories as $category): ?>
-                    <option><?php echo htmlspecialchars($category); ?></option>
-                    <?php endforeach; ?>
-                </select>
-              </td>  
-            </tr>
-            <tr>
-              <th>description:</th>
-              <td>
-                <textarea  rows="15" cols="50"  type="text" name="description"><?php
-                  echo htmlspecialchars($params->description)
-                  ?></textarea>    
-              </td>
-            </tr>
-            <tr>
-              <th>image:</th>
-              <td><input type="text" name="image" 
-                         value="<?php echo htmlspecialchars($params->image) ?>" />
-              </td>
-            </tr>
-            <tr>
-              <td></td>
-              <td><button type="submit" name="add">Add Item</button></td>
-            </tr>
-          </table>
-        </form>
-      </section><!-- content -->
+                <?php endforeach; ?>
+            </select>              
+          </td>
+        </tr>
+        <tr>
+          <th>upc/cat#:</th>
+          <td><input type="text" name="upc"
+                     value="<?php echo htmlspecialchars($params->upc) ?>" />
+          </td>
+        </tr>
+        <tr>
+          <th>category:</th>
+          <td>
+            <select required name="category">
+              <?php foreach ($categories as $category): ?>
+                <option><?php echo htmlspecialchars($category); ?></option>
+              <?php endforeach; ?>
+            </select>
+          </td>  
+        </tr>
+        <tr>
+          <th>description:</th>
+          <td>
+            <textarea  rows="15" cols="50"  type="text" name="description"><?php
+              echo htmlspecialchars($params->description)
+              ?></textarea>    
+          </td>
+        </tr>
+        <tr>
+          <th>image:</th>
+          <td><input type="text" name="image" 
+                     value="<?php echo htmlspecialchars($params->image) ?>" />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><button type="submit" name="add">Add Item</button></td>
+        </tr>
+      </table>
+    </form>
+  </section><!-- content -->
 
-  </section><!-- container -->
-  <script type="text/javascript" src="js/textlength.js"></script>
-  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-  <script type="text/javascript" src="js/superfish.min.js"></script>
-  <script type="text/javascript" src="js/init.js"></script>
-  <script type="text/javascript">
-    $(function() {
-        $("button[name='add']").click(function() {
-          return confirm("Are you sure?");
-        });
-      });
-  </script>
-  <footer id="footer"><?php require_once 'footer.php'; ?></footer>
+</section><!-- container -->
+<script type="text/javascript" src="js/textlength.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/superfish.min.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript">
+  $(function() {
+    $("button[name='add']").click(function() {
+      return confirm("Are you sure?");
+    });
+  });
+</script>
+<footer id="footer"><?php require_once 'footer.php'; ?></footer>
 </body>
 </html>
