@@ -4,7 +4,7 @@
  * File: modfiyCD.php
  * Date: 05/17/2014
  * PHP version: 5.3
- * Description: Allows superuser to modify a cd already in database.  
+ * Description: Allows a superuser to modify a cd already in database.  
  * Redirected to CD TABLE
  * ToDo: Enable image stuff
  */
