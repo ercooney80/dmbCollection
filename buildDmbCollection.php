@@ -1,7 +1,7 @@
 <?php
 
 if (isset($_SERVER['REQUEST_URI'])) {
-  echo "<pre>\n";  // if web access allowed and used
+    echo "<pre>\n";  // if web access allowed and used
 }
 
 require_once "setup/init.php";
