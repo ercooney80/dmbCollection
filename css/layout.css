@@ -69,10 +69,11 @@ table tr:nth-child(odd) {
     -webkit-border-radius: 4px 4px 0 0;
     -moz-border-radius: 4px 4px 0 0;
     width: 100%;
+    height: 17%;
 }
 
 .container {
-    width: 875px;
+    width: 90%;
     margin: 0 auto; /* auto: centers container */
 }
 

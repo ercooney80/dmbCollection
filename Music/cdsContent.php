@@ -20,6 +20,11 @@ if (isset($params->orderField)) {
     $orderField = $params->orderField;
 }
 
+if (isset($session->user)) {
+    $loggedIn = TRUE;
+    $superUser = $session->user->level > 0;
+}
+
 // Gets CDs from DB
 $cds = R::findAll('cd', "1 order by $orderField asc");
 // Build the cd display array
@@ -67,7 +72,8 @@ foreach ($cds as $cd) {
             <th style="width: 24%">Description</th>
             <?php foreach ($list as $cd): ?>
                 <tr>
-                    <td><input type="checkbox" name="ids[]" value="<?php echo htmlspecialchars($cd['id']) ?>" />     
+                    <td><?php if ($superUser): ?>
+                        <input type="checkbox" name="ids[]" value="<?php echo htmlspecialchars($cd['id']) ?>" /><?php endif; ?>      
                         <a href="modifyCd.php?id=<?php echo $cd['id'] ?>"><?php echo htmlspecialchars($cd['artist']); ?></a></td>
                     <td><?php echo htmlspecialchars($cd['title']); ?></td>
                     <td style="text-align: center;"><?php echo htmlspecialchars($cd['discs']); ?></td>

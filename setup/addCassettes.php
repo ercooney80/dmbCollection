@@ -1,5 +1,12 @@
 <?php
-
+/**
+ * @author Edward Cooney <ercooney80@gmail.com>
+ * File: addCassettes.php
+ * Date: 08/16/2014
+ * PHP version: 5.3
+ * Description: Allows SuperUser to add a cassette to the database
+ * ToDo: Enable image stuff
+ */
 $cassettes_file = "setup/cassettes.txt";
 if (!file_exists($cassettes_file)) {
     die("missing file $cassettes_file\n");

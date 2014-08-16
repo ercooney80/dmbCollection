@@ -32,11 +32,11 @@ $filename = "$type" . "/" . $table . "Content.php";
         <style type="text/css">     
 <?php if ($session->user->level > 0): ?>
                 .container {
-                    width: 1040px;
+                    width: 90%;
                 }
 <?php else: ?>
                 .container {
-                    width: 1020px;
+                    width: 85%;
                 }
 <?php endif; ?>
         </style>  

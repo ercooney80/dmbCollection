@@ -2,7 +2,7 @@
 /**
  * @author Edward Cooney <ec789115@wcupa.edu>
  * File: addCd.php
- * Date: 05/17/2014
+ * Date: 08/16/2014
  * PHP version: 5.3
  * Description: Allows superuser to add new cd to the database.  
  * Redirected to CD TABLE
@@ -99,12 +99,12 @@ if (isset($params->add)) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <title>Admin - Add CD</title>
+        <title>Admin - Add Cassette</title>
         <link rel="stylesheet" type="text/css" href="css/superfish.css" />
         <link rel="stylesheet" type="text/css" href="css/layout.css" />
         <link rel="stylesheet" type="text/css" href="css/form-layout.css" />
         <style type="text/css">
-
+            
         </style>  
     </head>
     <body>

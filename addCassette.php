@@ -7,6 +7,7 @@
  * Description: Allows superuser to add new cassette to the database.  
  * Redirected to CASSETTE TABLE
  * ToDo: Enable image stuff
+ *      JS CHECK
  */
 require_once "include/Session.php";
 $session = new Session();

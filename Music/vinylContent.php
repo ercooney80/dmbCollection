@@ -20,6 +20,12 @@ if (isset($params->orderField)) {
     $orderField = $params->orderField;
 }
 
+
+if (isset($session->user)) {
+    $loggedIn = TRUE;
+    $superUser = $session->user->level > 0;
+}
+
 // Get Vinyl from DB
 $vinyls = R::findAll('vinyl', "1 order by $orderField asc");
 // Build the vinyl display array
@@ -69,7 +75,8 @@ foreach ($vinyls as $vinyl) {
 
         <?php foreach ($list as $vinyl): ?>
             <tr>
-                <td><input type="checkbox" name="ids[]" value="<?php echo htmlspecialchars($vinyl['id']) ?>" />     
+                <td><?php if ($superUser): ?>
+                    <input type="checkbox" name="ids[]" value="<?php echo htmlspecialchars($vinyl['id']) ?>" />  <?php endif; ?>    
                     <a href="modifyVinyl.php?id=<?php echo $vinyl['id'] ?>"><?php echo htmlspecialchars($vinyl['artist']); ?></a></td>
                 <td><?php echo htmlspecialchars($vinyl['title']); ?></td>
                 <td style="text-align: center;"><?php echo htmlspecialchars($vinyl['records']); ?></td>
