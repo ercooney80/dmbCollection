@@ -37,6 +37,6 @@ foreach ($cassettes as $str) {
         $id = R::store($cassette);
         echo "#$id: $title\n";
     } catch (Exception $ex) {
-        echo $ex->getMessage(), "\n";
+        echo $ex->getMessage(), "\n";   // throw exception message
     }
 }

@@ -18,6 +18,7 @@ if (isset($session->user)) {
     $superUser = $session->user->level > 0;
 }
 ?>
+
 <li><a href=".">Home</a></li> 
 <li><a href="#">Music</a>
     <ul>

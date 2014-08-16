@@ -21,6 +21,11 @@ if (isset($params->orderField)) {
     $orderField = $params->orderField;
 }
 
+if (isset($session->user)) {
+    $loggedIn = TRUE;
+    $superUser = $session->user->level > 0;
+}
+
 // Get cassettes from DB
 $cassettes = R::findAll('cassette', "1 order by $orderField ASC");
 // Build the cassette display array
@@ -68,8 +73,9 @@ foreach ($cassettes as $cassette) {
             <th style="width: 24%">Description</th>
             <?php foreach ($list as $cassette): ?>
                 <tr>
-                    <td><input type="checkbox" name="ids[]" value="<?php echo htmlspecialchars($cassette['id']) ?>" /> 
-                        <a href="modifyCassettes.php?id=<?php echo $cassette['id'] ?>"><?php echo htmlspecialchars($cassette['artist']); ?></a></td>
+                    <td><?php if ($superUser): ?>
+                        <input type="checkbox" name="ids[]" value="<?php echo htmlspecialchars($cassette['id']) ?>" /><?php endif; ?> 
+                        <a href="modifyCassette.php?id=<?php echo $cassette['id'] ?>"><?php echo htmlspecialchars($cassette['artist']); ?></a></td>
                     <td><?php echo htmlspecialchars($cassette['title']); ?></td>
                     <td style="text-align: center;"><?php echo htmlspecialchars($cassette['tapes']); ?></td>
                     <td><?php echo htmlspecialchars($cassette['country']); ?></td>

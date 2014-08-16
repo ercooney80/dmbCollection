@@ -1,9 +1,1 @@
-<Files tableTemplate.php>
-  order allow,deny
-#  allow from all
-</Files>
-<Files pageTemplate.php>
-  order allow,deny
-#  allow from all
-</Files>
-
+allow from all
