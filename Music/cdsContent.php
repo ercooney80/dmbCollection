@@ -45,7 +45,7 @@ foreach ($cds as $cd) {
 ?>
 <form action="removeItems.php" method="GET">
     <h3>CDs</h3>
-<!-- IF SUPER USER DISPLAY REMOVE OPTION AND MESSAGE -->
+    <!-- IF SUPER USER DISPLAY REMOVE OPTION AND MESSAGE -->
     <?php if ($superUser): ?>    
         <h4>To modify an item, click on the artist entry for the item</br>
             To remove items check the boxes
@@ -59,7 +59,7 @@ foreach ($cds as $cd) {
             <td></td>
             <td></td>
         </table>
-    <?php endif; ?>
+        <?php endif; ?>
         <table>
             <th style="width: 12%"><a href='displayTable.php?table=cds&type=Music&orderField=artist&sort=.$sort'>Artist</a></th>
             <th style="width: 19%"><a href='displayTable.php?table=cds&type=Music&orderField=title&sort=.$sort'>Title</a></th>
@@ -71,26 +71,26 @@ foreach ($cds as $cd) {
             <th style="width: 10%"><a href='displayTable.php?table=cds&type=Music&orderField=category&sort=.$sort'>Category</a></th>
             <th style="width: 24%">Description</th>
             <?php foreach ($list as $cd): ?>
-                <tr>
-                    <td><?php if ($superUser): ?>
-                        <input type="checkbox" name="ids[]" value="<?php echo htmlspecialchars($cd['id']) ?>" /><?php endif; ?>      
-                        <a href="modifyCd.php?id=<?php echo $cd['id'] ?>"><?php echo htmlspecialchars($cd['artist']); ?></a></td>
-                    <td><?php echo htmlspecialchars($cd['title']); ?></td>
-                    <td style="text-align: center;"><?php echo htmlspecialchars($cd['discs']); ?></td>
-                    <td><?php echo htmlspecialchars($cd['country']); ?></td>
-                    <td><?php echo htmlspecialchars($cd['condition']); ?></td>
-                    <td style="text-align: center;"><?php echo htmlspecialchars($cd['year']); ?></td>
-                    <td><?php echo htmlspecialchars($cd['upc']); ?></td>
-                    <td><?php echo htmlspecialchars($cd['category']); ?></td>
-                    <td><?php echo htmlspecialchars($cd['description']); ?></td>
-                </tr>
+        <tr>
+            <td><?php if ( $superUser): ?>
+                    <input type="checkbox" name="ids[]" value="<?php echo htmlspecialchars($cd['id']) ?>" /><?php endif; ?>      
+                                <a href="modifyCd.php?id=<?php echo $cd['id'] ?>"><?php echo htmlspecialchars($cd['artist']); ?></a></td>
+                <td><?php echo htmlspecialchars($cd['title']); ?></td>
+                <td style="text-align: center;"><?php  echo htmlspecialchars($cd['discs']); ?></td>
+                <td><?php echo htmlspecialchars($cd['country']); ?></td>
+                <td><?php echo htmlspecialchars($cd['condition']); ?></td>
+                <td style="text-align: center;"><?php echo htmlspecialchars($cd['year']); ?></td>
+                <td><?php echo htmlspecialchars($cd['upc']); ?></td>
+                        <td><?php echo htmlspecialchars($cd['category']); ?></td>
+                        <td><?php echo htmlspecialchars($cd['description']); ?></td>
+                    </tr>
             <?php endforeach; ?>
-        </table>
-        <table class="changer">
-            <td><button class="button" type="submit" name="remove">Remove Items</button></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </table>
+    </table>
+    <table class="changer">
+        <td><button class="button" type="submit" name="remove">Remove Items</button></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </table>
 </form>

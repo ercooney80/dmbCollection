@@ -96,7 +96,7 @@ if (isset($params->add)) {
     $params->upc = "";
     $params->vinyl_size = "";
     $params->description = "";
-    $params->image = "";
+    //$params->image = "";
 }
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 

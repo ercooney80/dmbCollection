@@ -210,7 +210,7 @@ if (isset($params->add)) {
         $("button[name='add']").click(function() {
             return confirm("Are you sure?");
         });
-    });
+        });
 </script>
 <footer id="footer"><?php require_once 'footer.php'; ?></footer>
 </body>

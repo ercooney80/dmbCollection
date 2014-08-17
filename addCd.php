@@ -104,7 +104,7 @@ if (isset($params->add)) {
         <link rel="stylesheet" type="text/css" href="css/layout.css" />
         <link rel="stylesheet" type="text/css" href="css/form-layout.css" />
         <style type="text/css">
-            
+
         </style>  
     </head>
     <body>
@@ -209,7 +209,7 @@ if (isset($params->add)) {
         $("button[name='add']").click(function() {
             return confirm("Are you sure?");
         });
-    });
+        });
 </script>
 <footer id="footer"><?php require_once 'footer.php'; ?></footer>
 </body>

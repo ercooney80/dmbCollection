@@ -7,6 +7,7 @@
  * Description: Allows superuser to modify a cassette already in database.  
  * Redirected to CASSETTE TABLE
  * ToDo: Enable image stuff
+ * look at $contents
  */
 require_once "include/Session.php";
 $session = new Session();
@@ -68,7 +69,7 @@ if (isset($params->modify)) {
             throw new Exception("COUNTRY IS EMPTY");
         }
 
-        // Create the cassette
+        // Modify the cassette
         $cassette->artist = $artist;
         $cassette->title = $title;
         $cassette->tapes = $tapes;
@@ -257,7 +258,7 @@ if (isset($params->modify)) {
         $(function() {
             $("button[name='modify']").click(function() {
                 return confirm("Are you sure?");
-                });
+            });
         });
     </script>
     <footer id="footer"><?php require_once 'footer.php'; ?></footer>

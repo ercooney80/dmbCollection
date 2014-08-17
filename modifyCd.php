@@ -2,7 +2,7 @@
 /**
  * @author Edward Cooney <ec789115@wcupa.edu>
  * File: modfiyCD.php
- * Date: 05/17/2014
+ * Date: 08/17/2014
  * PHP version: 5.3
  * Description: Allows superuser to modify a cd already in database.  
  * Redirected to CD TABLE
@@ -10,14 +10,16 @@
  */
 require_once "include/Session.php";
 $session = new Session();
-require_once "include/DB.php";
-DB::init();
-$params = (object) $_REQUEST;
 
 // Logged in SU only
 if ($session->user == null || $session->user->level == 0) {
     die("You do not have permission to access this page");
 }
+
+require_once "include/DB.php";
+DB::init();
+
+$params = (object) $_REQUEST;
 
 $years = DB::getYears();              // prod_year select
 $categories = DB::getCategories();    // category select
@@ -95,7 +97,7 @@ if (isset($params->modify)) {
         $contents = str_replace($old_entry, $new_entry, $contents, $count);
         file_put_contents($file, $contents, LOCK_EX);
         // go to cd table
-        header("location: cds.php");
+        header("location: displayTable.php?table=cds&type=Music");
         exit();
     } catch (Exception $ex) {
         $message = $ex->getMessage();
@@ -257,7 +259,7 @@ if (isset($params->modify)) {
         $(function() {
             $("button[name='modify']").click(function() {
                 return confirm("Are you sure?");
-            });
+                });
         });
     </script>
     <footer id="footer"><?php require_once 'footer.php'; ?></footer>

@@ -79,7 +79,7 @@ try {
             <td><?php echo $new_item['format']; ?></td>
             <td><?php echo $new_item['upc']; ?></td>
         </tr>
-    <?php endforeach; ?>
+        <?php endforeach; ?>
 </table>
 
 

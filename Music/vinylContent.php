@@ -31,6 +31,7 @@ $vinyls = R::findAll('vinyl', "1 order by $orderField asc");
 // Build the vinyl display array
 foreach ($vinyls as $vinyl) {
     $list[] = array(
+        'id' => $vinyl->id,
         'artist' => $vinyl->artist,
         'title' => $vinyl->title,
         'records' => $vinyl->records,
@@ -76,7 +77,7 @@ foreach ($vinyls as $vinyl) {
         <?php foreach ($list as $vinyl): ?>
             <tr>
                 <td><?php if ($superUser): ?>
-                    <input type="checkbox" name="ids[]" value="<?php echo htmlspecialchars($vinyl['id']) ?>" />  <?php endif; ?>    
+                        <input type="checkbox" name="ids[]" value="<?php echo htmlspecialchars($vinyl['id']) ?>" />  <?php endif; ?>    
                     <a href="modifyVinyl.php?id=<?php echo $vinyl['id'] ?>"><?php echo htmlspecialchars($vinyl['artist']); ?></a></td>
                 <td><?php echo htmlspecialchars($vinyl['title']); ?></td>
                 <td style="text-align: center;"><?php echo htmlspecialchars($vinyl['records']); ?></td>
