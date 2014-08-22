@@ -25,6 +25,7 @@ if (isset($session->user)) {
         <li><a href="displayTable.php?table=cds&type=Music">CDs</a></li>
         <li><a href="displayTable.php?table=cassettes&type=Music">Cassettes</a></li>
         <li><a href="displayTable.php?table=vinyl&type=Music">Vinyl</a></li>
+        <li><a href="displayTable.php?table=other&type=Music">Misc</a></li>
     </ul>
 </li>
 <li><a href="#">Video</a>

@@ -1,8 +1,8 @@
 <?php
 /**
  * @author Edward Cooney <ercooney80@gmail.com>
- * File: Music/cassettesContent.php
- * Date: 07/11/2014
+ * File: Music/otherContent.php
+ * Date: 08/11/2014
  * PHP version: 5.3
  * Description: build the content for the cassette display page
  * ToDo: add JS check for remove item

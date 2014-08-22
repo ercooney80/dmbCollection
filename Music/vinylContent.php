@@ -77,8 +77,11 @@ foreach ($vinyls as $vinyl) {
         <?php foreach ($list as $vinyl): ?>
             <tr>
                 <td><?php if ($superUser): ?>
-                        <input type="checkbox" name="ids[]" value="<?php echo htmlspecialchars($vinyl['id']) ?>" />  <?php endif; ?>    
-                    <a href="modifyVinyl.php?id=<?php echo $vinyl['id'] ?>"><?php echo htmlspecialchars($vinyl['artist']); ?></a></td>
+                        <input type="checkbox" name="ids[]" value="<?php echo htmlspecialchars($vinyl['id']) ?>" />     
+                    <a href="modifyVinyl.php?id=<?php echo $vinyl['id'] ?>"><?php echo htmlspecialchars($vinyl['artist']); ?></a>
+                    <?php else: ?>
+                    <?php echo htmlspecialchars($vinyl['artist']); ?>
+                </td><?php endif; ?>
                 <td><?php echo htmlspecialchars($vinyl['title']); ?></td>
                 <td style="text-align: center;"><?php echo htmlspecialchars($vinyl['records']); ?></td>
                 <td><?php echo htmlspecialchars($vinyl['country']); ?></td>
@@ -91,6 +94,7 @@ foreach ($vinyls as $vinyl) {
             </tr>
         <?php endforeach; ?>
     </table>
+     <?php if ($superUser): ?>
     <table class="changer">
         <td><button class="button" type="submit" name="remove">Remove Items</button></td>
         <td></td>
@@ -98,5 +102,5 @@ foreach ($vinyls as $vinyl) {
         <td></td>
         <td></td>
     </table>
-</table>
+        <?php        endif; ?>
 </form>

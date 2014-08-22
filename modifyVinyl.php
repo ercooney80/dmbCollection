@@ -190,7 +190,7 @@ if ($session->user == null || $session->user->level == 0) {
                         <th>condition:</th> 
                         <td>
                             <input style="width: 3em" 
-                            <?php if ($params->cond == "SEALED"): ?>
+                            <?php if ($params->cond == "SEALED" ): ?>
                                        checked
                                    <?php endif; ?>
                                    type="radio" name="condition" value="SEALED">Sealed
